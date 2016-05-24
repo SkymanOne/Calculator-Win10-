@@ -1,0 +1,82 @@
+﻿<Page
+    x:Class="CalculatorByGermanLol.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CalculatorByGermanLol"
+    xmlns:adduplex="using:AdDuplex"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+    mc:Ignorable="d">
+
+    <Grid RenderTransformOrigin="0.5,0.5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="193*"/>
+            <RowDefinition Height="221*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" MinWidth="7"/>
+            <ColumnDefinition Width="346*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/colorful-triangles-background.jpg">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform/>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </Grid.Background>
+        <Popup Grid.ColumnSpan="3" Grid.RowSpan="8">
+            <Grid Background="#FFE5E5E5" Height="39" Width="38"/>
+        </Popup>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="91,7,98.667,7" TextWrapping="Wrap" Foreground="White" SelectionHighlightColor="#FFF8F9FA" FontSize="20" FontFamily="Showcard Gothic" Grid.Column="1" Width="159" Grid.Row="2" VerticalAlignment="Center" Height="31">
+        	<Run Text="About this App"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <Button x:Name="BackToCalk" Content="go&#xD;&#xA;to&#xD;&#xA;calc." HorizontalAlignment="Center" Margin="271,0,1,32" VerticalAlignment="Bottom" Foreground="#FFFBFBFB" Background="#33F9F9F9" FontSize="18" FontFamily="Ravie" FontWeight="Bold" Click="Back_Click" Grid.Column="1" Grid.Row="6" BorderBrush="#FFF7F7F7" Height="84"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Margin="7.919,0,6.748,2.223" Grid.Row="5" TextWrapping="Wrap" FontSize="16" Foreground="#FFFAF6F6" FontWeight="Bold" FontFamily="Stencil" Grid.Column="1" Width="334" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock.RenderTransform>
+                <CompositeTransform SkewX="0.298" TranslateX="0.745"/>
+            </TextBlock.RenderTransform>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="Калькулятор"/>
+        	<Run Text=" "/>
+        	<Run Text="разработанный командой "/>
+        	<Run Text="SkyMen Lab. "/>
+        	<Run Text="В будущих версиях планируется реализовать отправку результата в мессенджеры и по смс"/>
+        	<Run Text=". "/>
+        	<Run Text="Следите за новостями в официальной группе"/>
+        	<LineBreak/>
+        	<Run Text="Кнопка перехода расположена ниже"/>
+        </TextBlock>
+        <TextBlock x:Name="Ву" Grid.Column="1" Margin="15.475,63.928,83.895,22.743" Grid.Row="6" TextWrapping="Wrap" Foreground="#FFFBFBFB" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" VerticalAlignment="Center" FontSize="18" Width="250.63" Height="134.329">
+            <TextBlock.RenderTransform>
+                <CompositeTransform SkewY="-0.317" TranslateY="-0.744"/>
+            </TextBlock.RenderTransform>
+        	<Run Text=""/>
+        	<LineBreak/>
+        	<Run Text="Особая благодарность выражается Копылову Артёму за создание графического оформления приложения"/>
+        	<Run Text="."/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock2" Grid.Column="1" HorizontalAlignment="Center" Margin="3,10,47.667,8" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="#FF0B0202" FontSize="11" Height="32" SelectionHighlightColor="White" Width="298">
+        	<Run Text="Geek Calculator v.1.1.7"/>
+        	<LineBreak/>
+        	<Run Text="Made by Team SkyMen Lab."/>
+        </TextBlock>
+        <HyperlinkButton Content="" Grid.Column="1" HorizontalAlignment="Center" Margin="6,14,0.667,138" Grid.Row="6" VerticalAlignment="Center" NavigateUri="https://vk.com/skymen_lab" Foreground="Black" Width="342" Height="69">
+            <HyperlinkButton.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="ms-appx:///Assets/skymen_lab.png"/>
+            </HyperlinkButton.Background>
+        </HyperlinkButton>
+        <adduplex:AdControl AdUnitId="192007" AppKey="aba5eb06-b7ed-4f5c-a278-8df7c8e8bb05" Margin="20,11,27,14" Grid.Column="1" Grid.Row="3" />
+    </Grid>
+</Page>
